@@ -1,0 +1,156 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* Mobile */
+:root{
+    font-size: 4.25vw;
+}
+/* Tablet */
+@media screen and ( min-width: 719px ) {
+    :root{
+        font-size: 2.25vw;
+    }
+}
+/* Desktop */
+@media screen and ( min-width: 1279px ) {
+    :root{
+        font-size: 19px;
+    }
+}
+
+@media screen and ( min-width: 1279px ) {
+    .container{
+        width: 1140px;
+        margin: auto;
+    }
+}
+
+/* Header */
+.header_section{
+    background-color: #112959;
+    padding: 1.5rem ;
+}
+
+.header_content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+
+.header_section ul{
+    display: flex;
+    list-style: none;
+}
+
+.menu li{
+    display: none;
+    margin-left: 1.5rem;
+}
+
+.menu a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.3rem; 
+    transition: .2s all ease;
+}
+
+.menu a:hover{
+    color: #7499F1;    
+}
+
+.menu_hamburguer img{
+    width: 3rem;
+    height: 3rem;
+}
+
+@media screen and ( min-width: 719px ) {
+    .menu_hamburguer{
+        display: none;
+    }
+    .menu li{
+        display: block;
+    }
+}
+
+@media screen and ( min-width: 1279px ) {
+    .menu_hamburguer{
+        display: none;
+    }
+    .menu li{
+        display: block;
+    }
+}
+
+/* Destaque */
+.destaque_section{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-items: center;
+    justify-content: center;
+}
+
+.div_img{
+    width: 100vw;
+}
+
+.div_img img{
+    width: 100%;
+}
+
+.destaque_content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.destaque_content a{
+    text-decoration: none;
+    color: #fff;
+    transition: .5s all ease;
+    background-color: #7499F1;
+    padding: .3rem 1rem;
+    border-radius: 50px;
+    margin-top: .5rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.destaque_content a:hover{
+    text-decoration: none;
+    color: #fff;
+    background-color: #112959;
+    padding: .3rem 1rem;
+    border-radius: 50px;
+    margin-top: .5rem;
+}
+
+/* Tablet */
+@media screen and ( min-width: 719px ) {
+    .destaque_section{
+        display: flex;
+        flex-direction: row;
+        justify-items: center;
+        justify-content: center;
+        padding: 1.5rem;
+    }
+
+    .div_img{
+        width: 50vw;
+    }
+    
+    .div_img img{
+        width: 100%;
+    }
+}
+
+/* Desktop */
+@media screen and ( min-width: 1279px){
+    .destaque_content{
+        margin-left: 3rem;
+    }
+}
