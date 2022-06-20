@@ -16,7 +16,7 @@
 /* Desktop */
 @media screen and ( min-width: 1279px ) {
     :root{
-        font-size: 19px;
+        font-size: 16px;
     }
 }
 
@@ -84,12 +84,16 @@
     }
 }
 
+
+
+
 /* Destaque */
 .destaque_section{
     display: flex;
     flex-direction: column-reverse;
     justify-items: center;
     justify-content: center;
+    height: 80vh;
 }
 
 .div_img{
@@ -133,10 +137,11 @@
 @media screen and ( min-width: 719px ) {
     .destaque_section{
         display: flex;
-        flex-direction: row;
+        flex-direction: row-reverse;
         justify-items: center;
         justify-content: center;
         padding: 1.5rem;
+        height: unset;
     }
 
     .div_img{
@@ -150,6 +155,9 @@
 
 /* Desktop */
 @media screen and ( min-width: 1279px){
+    .destaque_section{
+        height: unset;
+    }
     .destaque_content{
         margin-left: 3rem;
     }
