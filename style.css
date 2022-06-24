@@ -85,8 +85,6 @@
 }
 
 
-
-
 /* Destaque */
 .destaque_section{
     display: flex;
@@ -161,4 +159,48 @@
     .destaque_content{
         margin-left: 3rem;
     }
+
 }
+
+
+
+/* Quem somos */
+.quemsomos_section{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.quemsomos_content{
+    text-align: center;
+    padding: 0 1rem;
+}
+
+.quemsomos_content h2{
+    font-size: 2.6rem;
+    margin-bottom: 1rem;
+}
+
+.quemsomos_content p{
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+}
+
+/* Tablet / Desktop */
+@media screen and ( min-width: 719px){
+    .quemsomos_section{
+        display: flex;
+        flex-direction: row-reverse;     
+        align-items: center;  
+
+    }
+
+    .quemsomos_content{
+        width: 50vw;
+        text-align: justify;
+    }
+
+}
+
+
+
+
